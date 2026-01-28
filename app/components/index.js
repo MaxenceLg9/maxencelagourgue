@@ -8,5 +8,5 @@ export { default as Experience } from'./Experience/Experience'
 export { default as Contacts } from'./Contacts/Contacts'
 export { default as GroupProjects } from './GroupProjects/GroupProjects'
 export { default as PersonalProjects } from './PersonalProjects/PersonalProjects'
-export { default as SingleProject } from './GroupProjects/SingleProject/SingleProject'
+export { default as SingleProject } from './GroupProjects/SingleProject/SingleGroupProject'
 export { default as Skills } from "./Skills/Skills"

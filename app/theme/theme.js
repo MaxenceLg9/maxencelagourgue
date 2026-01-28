@@ -214,9 +214,9 @@ export const orangeThemeDark = {
     secondary70: '#101010',
     secondary100: 'rgba(103,103,103,0.44)',
     secondary50: '#21212180',
-    tertiary: '#eaeaea',
-    tertiary80: '#eaeaeacc',
-    tertiary70: '#eaeaeab3',
+    tertiary: '#ffffff',
+    tertiary80: 'rgba(213,218,230,0.99)',
+    tertiary70: 'rgba(167,176,198,0.7)',
     tertiary50: '#eaeaea80',
     aboutimg1: orangeThemeboy,
     aboutimg2: orangeThemegirl,
@@ -224,6 +224,7 @@ export const orangeThemeDark = {
     expimg: expOrange,
     contactsimg: contactsOrange,
     quartiary: '#ffffff30',
+    quartiary10: '#0d1117',
 }
 
 export const purpleThemeLight = {

@@ -14,6 +14,7 @@ import {
 import ScrambleText from "./Scramble";
 import Background from "../Background/background";
 import Link from "next/link";
+import {scrollToSection} from "../ScrollToSection/ScrollToSection";
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -87,7 +88,7 @@ function Landing() {
                                 </a>
                             )}
                             {/* Replaced NavLink <>with a Button + handleContactClick */}
-                            <Link href='#contacts' className='contactBtn' > Contact</Link>
+                            <span onClick={() => scrollToSection("contacts")} className='contactBtn' > Contact</span>
                         </div>
                     </div>
 

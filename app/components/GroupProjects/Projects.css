@@ -80,8 +80,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 4.5rem;
     width: 100%;
+}
+
+#projects {
+    scroll-margin-top: 120px; /* Height of your navbar + extra gap */
 }
 
 .projects--viewAll {

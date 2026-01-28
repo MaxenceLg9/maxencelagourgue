@@ -10,21 +10,22 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@mui/styles';
 import Link from 'next/link';
 import Drawer from '@mui/material/Drawer';
-import CloseIcon from '@mui/icons-material/Close';
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import {scrollToSection} from "../ScrollToSection/ScrollToSection";
 
 function Navbar() {
     const { theme } = useContext(ThemeContext);
 
     const navItems = [
-        { id: 'home', text: 'Accueil', icon: <IoHomeSharp />, href: '#home' },
-        { id: 'about', text: 'A propos', icon: <FaUser />, href: '#about' },
-        { id: 'resume', text: 'CV', icon: <HiDocumentText />, href: '/resume' },
-        { id: 'projects', text: 'Projets', icon: <FaFolderOpen />, href: "/pages/projects/" }, // Switches view entirely
-        { id: 'contacts', text: 'Contact', icon: <MdPhone />, href: '#contacts' },
+        { id: 'home', text: 'Accueil', icon: <IoHomeSharp />, href: () => scrollToSection('home') },
+        { id: 'about', text: 'A propos', icon: <FaUser />, href: () => scrollToSection('about') },
+        { id: 'resume', text: 'CV', icon: <HiDocumentText />, href: headerData.resumePdf },
+        { id: 'skills', text: 'Compétences', icon: <HiDocumentText />, href: () => scrollToSection('skills') },
+        { id: 'projects', text: 'Projets', icon: <FaFolderOpen />, href: () => scrollToSection('projects')}, // Switches view entirely
+        { id: 'contacts', text: 'Contact', icon: <MdPhone />, href: () => scrollToSection('contacts') },
     ];
 
     return (
@@ -35,10 +36,17 @@ function Navbar() {
                 </h1>
                 <div className='navbarRight'>
                     {navItems.map((item) => (
-                        <Link href={item.href} key={item.id} onClick={item.action} className='drawer-item'>
+                        typeof item.href === 'string' ? (
+                            <Link href={item.href} key={item.id} className='drawer-item' download='resume' target='_blank' rel='noreferrer'>
                             {React.cloneElement(item.icon, { className: 'drawer-icon' })}
-                            <span className='drawer-links'>{item.text}</span>
-                        </Link>
+                                <span className='drawer-links'>{item.text}</span>
+                            </Link>
+                        ) : (
+                            <span onClick={item.href} key={item.id} className='drawer-item'>
+                            {React.cloneElement(item.icon, { className: 'drawer-icon' })}
+                                <span className='drawer-links'>{item.text}</span>
+                        </span>
+                        )
                     ))}
                 </div>
             </div>

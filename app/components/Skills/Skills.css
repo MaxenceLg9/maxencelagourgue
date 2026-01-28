@@ -32,12 +32,20 @@
     flex-direction: column;
     gap: 1.5rem;
     overflow: hidden;
+    font-weight: 600;
+    background-color: var(--item-quartiary10);
+    border-color: var(--item-primary);
+    color: var(--item-tertiary);
+}
+
+#skills {
+    scroll-margin-top: 120px; /* Height of your navbar + extra gap */
 }
 
 .skillCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    background-color: var(--item-primary50) !important;
+    background-color: var(--item-tertiary70);
 }
 
 .skillCardHeader {
@@ -57,8 +65,9 @@
 }
 
 .skillDesc {
-    font-size: 0.95rem;
+    font-size: 17px;
     line-height: 1.6;
+    /*font-family: Calibri, serif;*/
     font-family: var(--secondaryFont);
     opacity: 0.8;
 }

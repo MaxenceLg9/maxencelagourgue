@@ -24,8 +24,8 @@ function Main() {
 
             <About />
             <Education />
-            <Tools />
             <Experience />
+            <Tools />
 
             {/* projects has the 'View All' button which needs setView('projects') */}
             <Skills/>

@@ -17,25 +17,48 @@ export const groupProjectsData = [
         tags: ['React', 'CSS', 'Material Ui'],
         code: 'https://gitlab.info.iut-tlse3.fr/mrk4759a/configurations-s5b01',
         demo: 'https://gitlab.info.iut-tlse3.fr/mrk4759a/configurations-s5b01',
-        image: one
+        image: one,
+        skills: ['Réaliser', 'Administrer', 'Collaborer', 'Gérer', 'Optimiser', 'Conduire']
     },
     {
         id: 2,
         projectName: 'RugbyGestionApp',
         projectDesc: 'Application de gestion d\'équipe de rugby permettant de gérer les joueurs, les matchs et les statistiques.',
         tags: ['PHP', 'MySQL', 'JwT'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: two
+        code: 'https://github.com/MaxenceLg9/R401_RugbyGestion2',
+        demo: 'https://github.com/MaxenceLg9/R401_RugbyGestion2',
+        image: two,
+        skills: ['Réaliser', 'Collaborer', 'Gérer', 'Optimiser']
     },
     {
-        id: 2,
+        id: 3,
+        projectName: '44 Compress Tool',
+        projectDesc: 'Outil dit CLI: command-line-interface, interface en ligne de commande permettant de compresser et décompresser des fichiers en utilisant l\'algorithme d\'Huffman. D\'autres features sont comprises comme l\'affichage de l\'arbre d\'Huffman',
+        tags: ['PHP', 'MySQL', 'JwT'],
+        code: 'https://github.com/MaxenceLg9/R5B10-Compress_Projet_Rust',
+        demo: 'https://github.com/MaxenceLg9/R5B10-Compress_Projet_Rust',
+        image: three,
+        skills: ['Réaliser', 'Collaborer', 'Optimiser']
+    },
+    {
+        id: 4,
         projectName: '44 Compress',
         projectDesc: 'Outil dit CLI: command-line-interface, interface en ligne de commande permettant de compresser et décompresser des fichiers en utilisant l\'algorithme d\'Huffman. D\'autres features sont comprises comme l\'affichage de l\'arbre d\'Huffman',
         tags: ['PHP', 'MySQL', 'JwT'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: two
+        image: three,
+        skills: ['']
+    },
+    {
+        id: 5,
+        projectName: '44 Compress',
+        projectDesc: 'Outil dit CLI: command-line-interface, interface en ligne de commande permettant de compresser et décompresser des fichiers en utilisant l\'algorithme d\'Huffman. D\'autres features sont comprises comme l\'affichage de l\'arbre d\'Huffman',
+        tags: ['PHP', 'MySQL', 'JwT'],
+        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        image: three,
+        skills: ['']
     },
 
 ]
@@ -45,7 +68,7 @@ export const personalProjetsData = [
         id: 1,
         projectName: 'CAPI',
         projectDesc: 'Une API REST programmable entièrement écrite en C, et en Rust',
-        tags: ['Rust', 'C'],
+        tags: ['Rust', 'C', 'HTTP', 'TLS'],
         code: 'https://github.com/MaxenceLg9/CAPI',
         demo: 'https://github.com/MaxenceLg9/CAPI',
         image: one
@@ -69,19 +92,3 @@ export const personalProjetsData = [
         image: two
     },
 ]
-
-
-// Do not remove any fields.
-// Leave it blank instead as shown below
-
-/* 
-{
-    id: 1,
-    projectName: 'Car Pooling System',
-    projectDesc: '',
-    tags: ['Flutter', 'React'],
-    code: '',
-    demo: '',
-    image: ''
-}, 
-*/

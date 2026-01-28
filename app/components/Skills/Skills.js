@@ -17,28 +17,16 @@ function Skills() {
                     <div
                         className="skillCard"
                         key={id}
-                        style={{ backgroundColor: 'var(--item-secondary100)', borderColor: 'var(--item-primary)' }}
                     >
                         <div className="skillCardHeader">
-                            <img
-                                src={`/logo/${skill.name.toLowerCase().replace(" ","_")}.svg`}
-                                alt={skill.name}
-                                className="skillIcon"
-                            />
-                            <h3 style={{color: 'var(--item-tertiary)'}}>{skill.name}</h3>
+                            {skill.icon}
+                            <h3>{skill.name}</h3>
                         </div>
 
                         <div className="skillContent">
-                            <p className="skillDesc" style={{color: 'var(--item-tertiary)'}}>
+                            <p className="skillDesc">
                                 {skill.description}
                             </p>
-                            <div className="skillTags">
-                                {skill.subSkills.map((sub, index) => (
-                                    <span key={index} className="subSkillTag">
-                                        {sub}
-                                    </span>
-                                ))}
-                            </div>
                         </div>
 
                         {/* Decorative Technical Corner */}
