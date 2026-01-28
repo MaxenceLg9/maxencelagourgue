@@ -42,9 +42,10 @@ export function SingleGroupProject({ id, name, desc, tags, code, demo, image, sk
                 <p className='project-description-text'>{desc}</p>
                 <div className='project-links'>
                     <div className='project-skills-grid'>
-                        {skills.map((skill, index) => (
+                        {skills?.length > 0 ?
+                            (skills.map((skill, index) => (
                             <span onClick={() => scrollToSection("skills")} key={index} className="skill-badge">{skill}</span>
-                        ))}
+                        ))) : <p></p>}
                     </div>
                     <div className='project-tags-grid'>
                         {tags.map((tag, index) => (

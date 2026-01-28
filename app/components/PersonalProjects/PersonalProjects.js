@@ -23,7 +23,8 @@ function GroupProjects({ setView }) {
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
-                            {personalProjetsData.slice(0, 5).map(project => (
+                            {personalProjetsData?.length > 0 ?
+                                (personalProjetsData.slice(0, 5).map(project => (
                                 SinglePersonalProject({
                                     theme: theme,
                                     id: "pp-" + project.id,
@@ -35,7 +36,7 @@ function GroupProjects({ setView }) {
                                     image: project.image,
                                     setView: setView
                                 })
-                            ))}
+                            ))) : <p></p>}
                         </div>
                     </div>
                 </div>

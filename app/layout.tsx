@@ -8,6 +8,7 @@ import {Variables} from '@/app/assets/css/variables'
 import { Poppins, JetBrains_Mono } from 'next/font/google';
 import Background from "@/app/components/Background/background";
 import "./App.css";
+import React from "react";
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -28,7 +29,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="fr" className={`${poppins.variable} ${jetbrains.variable}`}>
-        <body style={Variables}>
+        <body style={Variables as React.CSSProperties}>
         <HelmetProvider>
             <ThemeContextProvider>
                 <Background children={children} className="app"/>

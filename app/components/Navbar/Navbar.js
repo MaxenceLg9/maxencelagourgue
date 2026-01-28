@@ -35,7 +35,7 @@ function Navbar() {
                     {headerData.name.split(' ')[0]}<span style={{ color: theme.primary }}>.</span>
                 </h1>
                 <div className='navbarRight'>
-                    {navItems.map((item) => (
+                    {navItems?.length > 0 ? (navItems.map((item) => (
                         typeof item.href === 'string' ? (
                             <Link href={item.href} key={item.id} className='drawer-item' download='resume' target='_blank' rel='noreferrer'>
                             {React.cloneElement(item.icon, { className: 'drawer-icon' })}
@@ -47,7 +47,7 @@ function Navbar() {
                                 <span className='drawer-links'>{item.text}</span>
                         </span>
                         )
-                    ))}
+                    ))) : <p>Aucun lien trouvé</p>}
                 </div>
             </div>
         </nav>

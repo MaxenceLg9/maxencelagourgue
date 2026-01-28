@@ -16,7 +16,8 @@ function Education() {
             <div className="education-body">
                 <div className="education-description">
                 <h1 style={{color:theme.primary}}>Formation</h1>
-                    {educationData.map(edu => (
+                    {educationData?.length > 0 ?
+                        (educationData.map(edu => (
                         <EducationCard 
                             key={edu.id}
                             id={edu.id}
@@ -28,7 +29,7 @@ function Education() {
                             mention={edu.mention}
                             options={edu.options}
                         />
-                    ))}
+                    ))) : <p>Aucune formation trouvée</p>}
                 </div>
                 <div className="education-image">
                     <img src={theme.eduimg} alt=""/>

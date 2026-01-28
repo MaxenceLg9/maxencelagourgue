@@ -13,7 +13,8 @@ function Skills() {
             </div>
 
             <div className="skillsGrid">
-                {skillsData.map((skill, id) => (
+                {skillsData?.length > 0 ?
+                    (skillsData.map((skill, id) => (
                     <div
                         className="skillCard"
                         key={id}
@@ -32,7 +33,7 @@ function Skills() {
                         {/* Decorative Technical Corner */}
                         <div className="cardCorner" style={{borderRightColor: 'var(--item-primary)'}}></div>
                     </div>
-                ))}
+                ))) : <p></p>}
             </div>
         </div>
     );
