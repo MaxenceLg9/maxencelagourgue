@@ -1,5 +1,5 @@
 .project-card-technical {
-    width: 420px;
+    width: 500px;
     height: 600px;
     background: #0d1117; /* GitHub Dark style */
     border: 1px solid #30363d;
@@ -79,16 +79,10 @@
     transform: translateX(4px);
 }
 
-.project-visual-area {
-    position: relative;
-    width: 100%;
-    height: 220px;
-    background: #000;
-}
-
 .project-image {
-    object-fit: cover;
-    opacity: 0.7; /* Dimmed by default for "Deep" look */
+    object-fit: contain;
+    height: 220px;
+    opacity: 0.9; /* Dimmed by default for "Deep" look */
     transition: opacity 0.4s ease;
 }
 
@@ -145,10 +139,6 @@
     color: #8b949e;
     line-height: 1.6;
     margin-bottom: 1rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 .project-tags-grid {

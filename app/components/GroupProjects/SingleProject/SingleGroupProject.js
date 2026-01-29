@@ -20,8 +20,9 @@ export function SingleGroupProject({ id, name, desc, tags, code, demo, image, sk
                     <Image
                         src={image ? image : placeholder}
                         alt={name}
-                        fill
                         className="project-image"
+                        width={500}
+                        height={220}
                     />
                 </div>
 

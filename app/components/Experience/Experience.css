@@ -1,5 +1,5 @@
 .experience{
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .experience-body {
@@ -40,9 +40,6 @@
     border-radius: 12px; /* Slightly sharper, modern corners */
     margin-bottom: 1.5rem;
 
-    /* The "Clean" Look */
-    /*background: rgba(255, 255, 255, 0.03); !* Very subtle transparent fill *!*/
-    /*background: rgba(255, 255, 255, 0.18); !* Very subtle transparent fill *!*/
     background: var(--item-quartiary);
     border: 1px solid rgba(255, 255, 255, 0.1); /* Thin border */
     border-right: 4px solid var(--item-primary); /* Bold accent line */
@@ -53,7 +50,8 @@
 
 .experience-card:hover {
     background: rgba(255, 255, 255, 0.08);
-    transform: translateX(-12px); /* Slide effect is more "premium" than scale */
+    transform: translateX(-20px); /* Slide effect is more "premium" than scale */
+    scale: 1.03;
     border-right: 8px solid var(--item-primary); /* Growing accent line */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }

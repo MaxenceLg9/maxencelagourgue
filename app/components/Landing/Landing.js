@@ -88,7 +88,7 @@ function Landing() {
                                 </a>
                             )}
                             {/* Replaced NavLink <>with a Button + handleContactClick */}
-                            <span onClick={() => scrollToSection("contacts")} className='contactBtn' > Contact</span>
+                            <span onClick={() => scrollToSection('contacts')} className='contactBtn' > Contact</span>
                         </div>
                     </div>
 

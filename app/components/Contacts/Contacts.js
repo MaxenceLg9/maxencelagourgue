@@ -12,7 +12,7 @@ import {
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
+import {HiOutlineDocumentText, HiOutlineLocationMarker} from 'react-icons/hi';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { socialsData } from '../../data/socialsData';
@@ -64,73 +64,24 @@ function Contacts() {
     };
 
     return (
-        <div className='contacts' id='contacts'>
-            <div className='contacts--container'>
-                <h1 style={{ color: theme.primary }}>Contact</h1>
-                <div className='contacts-body'>
-                    <div className='contacts-form'>
-                        <form onSubmit={handleContactForm}>
-                            <div className='input-container'>
-                                <label className="label">Name</label>
-                                <input
-                                    placeholder='Your Name'
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    className={`form-input input`}
-                                />
-                            </div>
-                            <div className='input-container'>
-                                <label className="label">Email</label>
-                                <input
-                                    placeholder='email@example.com'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className={`form-input input`}
-                                />
-                            </div>
-                            <div className='input-container'>
-                                <label className="label">Message</label>
-                                <textarea
-                                    placeholder='How can I help you?'
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    className={`form-message message`}
-                                />
-                            </div>
+        <div className='contacts-details'>
+            <div className='contacts-info-container'>
+                <h2 style={{ color: theme.primary }}>Get in Touch</h2>
 
-                            <div className='submit-btn'>
-                                <button type='submit' className="submitBtn">
-                                    <p>{!success ? 'Send' : 'Sent'}</p>
-                                    {!success ? <AiOutlineSend /> : <AiOutlineCheckCircle />}
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                <div className='contact-info-body'>
+                    {/* Email */}
+                    <a href={`mailto:${contactsData.email}`} className='contact-detail-link'>
+                        <FiAtSign className='contact-icon' />
+                        <p style={{color: theme.tertiary}}>{contactsData.email}</p>
+                    </a>
 
-                    <div className='contacts-details'>
-                        {/* Contact Details Grid */}
-                        <div className='contact-item'>
-                            <div className="detailsIcon"><FiAtSign /></div>
-                            <p style={{ color: theme.tertiary }}>{contactsData.email}</p>
-                        </div>
-                        {/* ... Repeat for Phone and Location ... */}
-
-                        <div className='socialmedia-icons'>
-                            {Object.entries(socialsData).map(([key, url]) => (
-                                url && <a key={key} href={url} target='_blank' rel='noreferrer' className="social">
-                                    {/* Map icon based on key */}
-                                </a>
-                            ))}
-                        </div>
-                    </div>
+                    {/* Phone */}
+                    <a href={`tel:${contactsData.phone}`} className='contact-detail-link'>
+                        <FiPhone className='contact-icon' />
+                        <p style={{color: theme.tertiary}}>{contactsData.phone}</p>
+                    </a>
                 </div>
             </div>
-            <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
-                <SnackbarContent
-                    message={errMsg}
-                    style={{ backgroundColor: success ? '#4caf50' : theme.primary, color: theme.secondary }}
-                />
-            </Snackbar>
         </div>
     );
 }

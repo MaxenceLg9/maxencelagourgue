@@ -32,7 +32,6 @@ function Main() {
             <GroupProjects />
             <PersonalProjects/>
 
-
             <Contacts />
             <Footer />
         </div>

@@ -25,6 +25,7 @@ function GroupProjects({ setView }) {
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
                             {groupProjectsData.slice(0, 5).map(project => (
+                                console.log(project),
                                 SingleGroupProject({
                                     id: "gp-" + project.id,
                                     name: project.projectName,

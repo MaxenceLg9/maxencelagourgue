@@ -18,8 +18,11 @@ export function SinglePersonalProject({ id, name, desc, tags, code, demo, image,
                     <Image
                         src={image ? image : placeholder}
                         alt={name}
-                        fill
                         className="project-image"
+                        width={500}
+                        height={220}
+                        quality={100} // Disables heavy compression
+                        unoptimized={true}
                     />
                 </div>
 
