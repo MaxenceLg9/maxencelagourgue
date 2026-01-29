@@ -1,8 +1,6 @@
 export const aboutData = {
     title: "Qui-suis-je ?",
-    description1: "Je m'appelle Maxence Lagourgue et je suis Alternant Ingénieur Cybersécurité !",
-    description2: "La cybersécurité, ou sécurité informatique, se définit comme l'expertise visant à protéger les systèmes d'informations et autres moyens de communications informatiques, allant du Wi-fi aux réseaux filaires!" +
-        " C'est donc ce domaine d'expertise que j'ai choisi car j'ai à disposition des missions stimulantes et enrichissantes, tout en ayant vocation à lier le challenge à l'utile et au bien commun." +
-        " Néanmoins la cybersécurité n'est pas ma seule passion car je pratique comme sport le rugby, ou comme activité, la littérature",
+    description1: "Bonjour, je suis Maxence Lagourgue, 20 ans, et actuellement Apprenti Ingénieur en Cybersécurité.",
+    description2: " Dans la conjecture actuelle, la vie privée est plus que menacée, de par les fuites de données et les mécanismes de fichage ou de contrôle d'accès. En tant qu'ingénieur cybersécurité, l'éthique informatique doit faire réagir pour défendre ces libertés collectives et individuelles qui sont remises en question. L'Etat de droit est un principe auquel toute personne dans la cybersécurité doit être consciente, et doit préserver. C'est en suivant ces valeurs que je souhaite travailler dans la cybersécurité, en protégeant les SI pour permettre aux utilisateurs de ne pas crainde l'oppression, liées à leur opinion, religion, ou toute forme de discrimination.",
     image: 2
 }

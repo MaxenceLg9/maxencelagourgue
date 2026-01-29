@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -319,11 +320,53 @@
   letter-spacing: 2px; /* Subtle "Dynamic" expansion */
 }
 
-.lcr--content p {
-  margin-top: 1.45rem;
+.quote-container {
+  position: relative;
+  margin-top: 2rem;
+  padding: 2rem 2.5rem;
+  background: var(--item-secondary70); /* Soft background matching your About section */
+  border-left: 4px solid var(--item-primary);
+  border-radius: 0 15px 15px 0;
+  backdrop-filter: blur(5px);
+}
+
+/* Large decorative quotation mark */
+.quote-container::before {
+  content: "\201C"; /* Unicode for open quote */
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 5rem;
+  color: var(--item-primary);
+  opacity: 0.15;
+  font-family: serif; /* Classic look for the symbol */
+}
+
+.quote-container p {
+  font-family: var(--primaryFont);
   font-weight: 500;
-  font-size: 1.15rem;
-  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0d9d9;
+  font-style: italic;
+  margin: 0;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 1.5rem;
+  font-family: var(--primaryFont);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--item-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal; /* Removes the italic from the parent blockquote */
+}
+
+/* Optional: Add a subtle glow to the primary border */
+.quote-container {
+  box-shadow: -5px 0 15px var(--item-primary10);
 }
 
 .lcr-buttonContainer {
@@ -349,13 +392,6 @@
 
   .lcr--content h1 {
     font-size: 3rem;
-  }
-
-  .lcr--content p {
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    font-size: 1rem;
   }
 
   .lcr-buttonContainer {

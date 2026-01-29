@@ -67,14 +67,24 @@ function Landing() {
                             <div className={`frame ${isEnglish ? 'frame-active' : 'frame-exit'}`}>
                                 <h3><span className="pulse-dot"></span><ScrambleText key={`fr-title-${isEnglish}`} text="Apprentice Cybersecurity Engineer"/></h3>
                                 <h1>{headerData.name}</h1>
-                                <p>{headerData.desciption}</p>
+                                <blockquote className="quote-container">
+                                    <p>
+                                        Ultimately, arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.
+                                    </p>
+                                    <cite className="quote-author">— Edward Snowden</cite>
+                                </blockquote>
                             </div>
 
                             {/* French Frame */}
                             <div className={`frame ${!isEnglish ? 'frame-active' : 'frame-exit'}`}>
                                 <h3><span className="pulse-dot"></span><ScrambleText key={`fr-title-${isEnglish}`} text={headerData.title} /></h3>
                                 <h1>{headerData.name}</h1>
-                                <p>{headerData.desciption}</p>
+                                <blockquote className="quote-container">
+                                    <p>
+                                        En fin de compte, prétendre que vous ne vous souciez pas du droit à la vie privée parce que vous n'avez rien à cacher revient à dire que vous ne vous souciez pas de la liberté d'expression parce que vous n'avez rien à dire.
+                                    </p>
+                                    <cite className="quote-author">— Edward Snowden</cite>
+                                </blockquote>
                             </div>
                         </div>
 

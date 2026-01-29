@@ -4,8 +4,6 @@ import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { aboutData } from '../../data/aboutData'
 import Image from "next/image";
-import expImgBlack from "../../assets/svg/experience/expImgBlack.svg";
-import expImgWhite from "../../assets/svg/experience/expImgWhite.svg";
 
 
 
