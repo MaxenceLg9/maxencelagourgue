@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { skillsData } from '../../data/skillsData'; // Assuming this now contains objects
 import './Skills.css';
+import {scrollToSection} from "../ScrollToSection/ScrollToSection";
 
 function Skills() {
     const { theme } = useContext(ThemeContext);
@@ -18,6 +19,7 @@ function Skills() {
                     <div
                         className="skillCard"
                         key={id}
+                        onClick={() => scrollToSection("projects")}
                     >
                         <div className="skillCardHeader">
                             {skill.icon}
