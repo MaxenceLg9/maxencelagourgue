@@ -139,6 +139,7 @@
     color: #8b949e;
     line-height: 1.6;
     margin-bottom: 1rem;
+    font-family: var(--primaryFont);
 }
 
 .project-tags-grid {

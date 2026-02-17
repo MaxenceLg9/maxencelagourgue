@@ -33,6 +33,7 @@
     gap: 1.5rem;
     overflow: hidden;
     font-weight: 600;
+    /*font-size: 20px;*/
     background-color: var(--item-quartiary10);
     border-color: var(--item-primary);
     color: var(--item-tertiary);
@@ -65,10 +66,10 @@
 }
 
 .skillDesc {
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.6;
     /*font-family: Calibri, serif;*/
-    font-family: var(--secondaryFont);
+    font-family: var(--primaryFont);
     opacity: 0.8;
 }
 

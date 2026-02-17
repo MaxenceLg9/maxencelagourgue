@@ -17,7 +17,7 @@ export const groupProjectsData = [
         code: 'https://gitlab.info.iut-tlse3.fr/mrk4759a/configurations-s5b01',
         demo: 'https://gitlab.info.iut-tlse3.fr/mrk4759a/configurations-s5b01',
         image: "/img/nailloux.png",
-        skills: ['Ingénierie', 'Administration de données', 'Management', 'Gouvernance SI', 'Innover', 'Conduire']
+        skills: ['Ingénierie', 'Administration de données', 'Management', 'Gouvernance SI', 'Innover', 'Gestion de Projet']
     },
     {
         id: 2,
