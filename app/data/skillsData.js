@@ -31,7 +31,7 @@ export const skillsData = [
         icon: <BsKanban/>
     },
     {
-        name: "Innovation",
+        name: "Innover",
         description: "Rationaliser les structures existantes pour résoudre des problématiques critiques et accroître l'efficience opérationnelle.",
         icon: <HiOutlineLightBulb/>
     }
